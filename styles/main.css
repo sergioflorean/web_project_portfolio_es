@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Archivo Black";
+  src:
+    url("../fonts/ArchivoBlack-Regular.woff2") format("woff2"),
+    url("../fonts/ArchivoBlack-Regular.woff") format("woff");
+}
+
+.main__container {
+  min-height: 100vh; /* ✔ correcto en vh */
+  max-width: 75rem; /* 1200px */
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.main__skills {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.main__skills_title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 40px;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.main__skill_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 180px;
+}
+
+.main__skill_icon {
+  width: 50px;
+  height: 50px;
+}
+
+.main__projects {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 100px;
+}
+.main__projects_title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 40px;
+  line-height: 1.1;
+  color: #fff;
+}
+.main__projects_grids {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: stretch;
+  column-gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.main__projects_card {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1c1c;
+  position: relative;
+}
+
+.main__projects_tech {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+  z-index: 2;
+}
+.project__tech_icon {
+  width: 40px;
+  height: 40px;
+}
+.project__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.main__projects_card_text {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  padding: 30px;
+  background-color: #1c1c1c;
+}
+
+.project__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  line-height: 1.1;
+  color: #fff;
+  font-weight: bold;
+}
+
+.project__info {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+}
+.project__links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.project__link {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.project__link_icon {
+  display: block;
+}
+
+.project__link:hover .project__link_icon {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1023px) {
+  .main__projects_grids {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+}
