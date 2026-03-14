@@ -25,7 +25,7 @@
 .main__skills {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: clamp(20px, 5vw, 50px);
 }
 .main__skills_title {
   font-family: "Archivo Black", sans-serif;
@@ -48,7 +48,7 @@
 .main__projects {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: clamp(20px, 5vw, 50px);
   margin-top: 100px;
 }
 .main__projects_title {
@@ -72,24 +72,25 @@
   background-color: #1c1c1c;
   position: relative;
 }
-
+.project__image_container {
+  position: relative;
+}
 .main__projects_tech {
   position: absolute;
-  top: 270px;
+  bottom: 12px;
   left: 12px;
   display: flex;
-  flex-direction: row;
   gap: 10px;
   padding: 10px;
   z-index: 2;
 }
 .project__tech_icon {
-  width: 40px;
-  height: 40px;
+  width: clamp(20px, 4vw, 40px);
+  height: auto;
 }
 .project__image {
   width: 100%;
-  height: 330px;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   display: block;
 }
@@ -158,5 +159,30 @@ img {
 @media screen and (max-width: 767px) {
   .project__info {
     font-size: 16px;
+  }
+
+  .main__skills_title {
+    font-size: 28px;
+  }
+
+  .main__projects_title {
+    font-size: 28px;
+  }
+  .project__title {
+    font-size: 20px;
+  }
+  .project__info {
+    font-size: 16px;
+  }
+
+  .main__skill_icons {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .main__skill_icon {
+    width: 30px;
+    height: 30px;
   }
 }

@@ -52,3 +52,12 @@
   transform: translate(-50%, -50%);
   z-index: 0;
 }
+
+@media screen and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
+  .footer__title {
+    font-size: 28px;
+  }
+}
