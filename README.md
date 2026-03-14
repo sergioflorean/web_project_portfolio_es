@@ -6,4 +6,4 @@ This project is a personal portfolio website created to showcase web development
 
 The website was built using HTML5 and CSS3, following semantic structure and modern layout practices. Flexbox and CSS Grid were used to create responsive layouts, while media queries and flexible units ensure the design adapts to different screen sizes. The project also uses Git and GitHub for version control and project management.
 
-https://sergioflorean.github.io/web_project_potrfolio_es/
+https://sergioflorean.github.io/web_project_portfolio_es/
